@@ -43,7 +43,7 @@ body {
 }
 .navbar-toggler { border: 0; }
 
-/* HERO: fondo mitad blanco / mitad morado */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -52,7 +52,7 @@ body {
   overflow: hidden;
 }
 
-/* pseudo-elemento para la mitad morada (siempre a la derecha) */
+
 .hero::before {
   content: "";
   position: absolute;
@@ -64,25 +64,23 @@ body {
   z-index: 1;
 }
 
-/* Aseguramos que el contenido quede por encima del pseudo-elemento */
+
 .hero .row, .hero .col-md-6 { 
 position: relative;
 z-index: 2; 
 }
 
 
-/* Ajustes de grid: usamos las columnas que ya tienes en el HTML */
 .hero .row {
 display: flex; 
 align-items: center; }
 
-/* COLUMNA IZQUIERDA (texto) */
 .hero .col-md-6:first-child {
   padding-left: 40px;
   padding-right: 20px;
 }
 
-/* NOMBRES - tamaño y separación */
+
 .hero h2 {
   font-size: 58px;        /* JUANITA */
   font-weight: 700;
@@ -106,7 +104,6 @@ align-items: center; }
   word-break: break-word;
 }
 
-/* PÁRRAFO - ancho y espaciado como maqueta */
 .hero p {
   margin-top: 28px;
   max-width: 480px;
@@ -116,7 +113,7 @@ align-items: center; }
   margin-bottom: 26px;
 }
 
-/* ICONOS - alineados en fila */
+
 .hero .col-md-6:first-child a {
   display: inline-block;
   margin-right: 16px;
@@ -143,7 +140,6 @@ align-items: center; }
 }
 
 
-/* COLUMNA DERECHA (imagen) */
 .hero .col-md-6:last-child {
   display: flex;
   align-items: center;
@@ -182,27 +178,27 @@ align-items: center; }
   line-height: 1.5;
 }
 
-/* ======= Estilos Habilidades ======= */
+
 #habilidades {
   padding: 50px 0;
   background: #F5F2F9;
 }
 
-/* Estilo título H2 */
+
 #habilidades h2 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-/* Estilo párrafo */
+
 #habilidades p {
   font-size: 19px;
   line-height: 1.6;
   color: #333;
 }
 
-/* Caja que encierra SOLO las barras */
+
 #habilidades .progress-box {
  background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -211,12 +207,12 @@ align-items: center; }
   backdrop-filter: blur(8px);
 }
 
-/* Cada bloque de habilidad */
+
 #habilidades .skill {
   margin-bottom: 20px;
 }
 
-/* Encabezado de cada skill (nombre + porcentaje) */
+
 #habilidades .skill-info {
      display: flex;
   justify-content: space-between;
@@ -225,14 +221,14 @@ align-items: center; }
   color: #333;
 }
 
-/* Barra de progreso */
+
 #habilidades .progress {
   height: 6px;
   background-color: #eaeaea;
   border-radius: 10px;
 }
 
-/* Barra morada */
+
 #habilidades .progress-bar {
   background-color: #8C63F1; /* morado */
   border-radius: 10px;
@@ -241,7 +237,7 @@ align-items: center; }
   color: #000;
 }
 
-/* Iconos organizados a la derecha */
+
 #habilidades .cont-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -312,11 +308,12 @@ padding: 20px;
 .edu-card {
   background: #F5F2F9;
   border-radius: 12px;
+  bottom: 100px;
   padding: 25px 20px;
   height: 100%;
   transition: all 0.3s ease;
   border: 2px solid transparent;
-   box-shadow: 0 0 25px rgba(140, 99, 241, 0.5); /* efecto glow morado */
+  box-shadow: 0 0 25px rgba(140, 99, 241, 0.5); /* efecto glow morado */
 }
 
 .edu-card:hover,
@@ -338,18 +335,23 @@ padding: 20px;
 
 .icon-circle i {
   font-size: 32px;
-  color:#8e63f1; /* Ícono morado */
+  color:#8e63f1; 
+}
+
+#educacion h2{
+  margin-top: 60px;
+
+  font-weight: bold;
+  color: #333;
 }
 
 
-/* ======= Estilos Experiencia Laboral ======= */
 #experiencia {
   padding: 50px 0;
   background: #F5F2F9;
  
 }
 
-/* Estilo título H2 */
 #experiencia .cont-info h2 {
   font-size: 22px;
   font-weight: bold;
@@ -358,14 +360,13 @@ padding: 20px;
 }
 
 
-/* Estilo párrafo */
+
 #experiencia p {
   font-size: 19px;
   line-height: 1.6;
   color: #333;
 }
 
-/* Caja que encierra SOLO las barras */
 #experiencia .progress-box {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -374,12 +375,11 @@ padding: 20px;
   backdrop-filter: blur(8px);
 }
 
-/* Cada bloque de experiencia */
 #experiencia .skill {
   margin-bottom: 20px;
 }
 
-/* Encabezado de cada skill (nombre + porcentaje) */
+
 #experiencia .skill-info {
   display: flex;
   justify-content: space-between;
@@ -388,14 +388,14 @@ padding: 20px;
   color: #333;
 }
 
-/* Barra de progreso */
+
 #experiencia .progress {
   height: 6px; /* igual de delgada que habilidades */
   background-color: #eaeaea;
   border-radius: 10px;
 }
 
-/* Barra morada */
+
 #experiencia .progress-bar {
   background-color: #8C63F1; /* morado */
   border-radius: 10px;
@@ -404,7 +404,7 @@ padding: 20px;
   color: #000;
 }
 
-/* Iconos organizados a la derecha */
+
 #experiencia .cont-img {
   display: flex;
   flex-wrap: wrap;
@@ -425,7 +425,7 @@ padding: 20px;
   padding: 50px 0;
   background: #fff;
 }
-/* Ajustar tamaño de imágenes */
+
 #hobbies .portfolio-img {
   width: 120px;   /* más pequeñas */
   height: 120px;  /* cuadradas */
@@ -434,7 +434,7 @@ padding: 20px;
   display: block;
 }
 
-/* Texto debajo de cada imagen */
+
 #hobbies .hobby-text {
   font-size: 1.1rem;
   font-weight: 600;
@@ -463,160 +463,302 @@ padding: 20px;
 #footer .footer-icons i {
   margin-right: 5px;
 }
+/*TABLET*/
+@media screen and (min-width:1024px) and (max-width:1366px){
 
+  body {
+    width: 100%;
+    
+  }
 
-
-/* ===================== */
-/* 📱 RESPONSIVE DESIGN  */
-/* ===================== */
-
-/* TABLET (iPad Air - 820px aprox.) */
-@media (max-width: 1024px) {
   .navbar {
     width: 90%;
-    padding: 8px 14px;
+    padding: 8px 20px;
+    top: 12px;
   }
+
+  .navbar-nav {
+    gap: 18px;
+  }
+
 
   .hero {
-    padding: 120px 40px 60px 40px;
+    padding: 100px 40px 60px 40px;
+    min-height: 50vh;
   }
 
-  .hero::before {
-    width: 100%; /* fondo morado ocupa todo para mejor contraste */
-    opacity: 0.15;
+  .hero h2 {
+    font-size: 46px;
+    margin-top: 40px;
   }
 
-  .hero .row {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .hero h2, .hero h3 {
-    font-size: 48px;
-    display: block;
-    margin: 0 auto;
-  }
-
+ .hero h3 {
+    color: #673AB7;
+    font-size: 43px;
+    line-height: 1.4;
+     margin-right: 17px;
+    }
+    
   .hero p {
-    max-width: 600px;
-    margin: 25px auto;
+  margin-top: 92px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 32px;
   }
 
   .hero .cont-img {
     height: 380px;
-    margin-bottom: 40px;
+    position: relative;
   }
 
   .hero .cont-img img {
-    position: relative;
-    width: 380px;
-    bottom: 0;
-    left: 0;
+    width: 463px;
+    position: absolute;
+    bottom: -40%;
+    left: -20%;
   }
 
-  #habilidades .cont-img {
-    grid-template-columns: repeat(3, 1fr);
+  /* --- PORTAFOLIO --- */
+  #Portafolio .cont-info {
+    padding: 40px 30px;
     gap: 20px;
+  }
+  #Portafolio .cont-img h2 {
+    font-size: 25px;
+    margin-top: 85px;
+    font-weight: bold;
+}
+  #Portafolio .cont-img p {
+  font-size: 21px;
+  line-height: 1.6;
+  }
+
+  #Portafolio .cont-info img {
+    max-width: 290px;
+    margin-bottom: 13px;
+}
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    left: 0;
+    right: 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
   }
 
   #experiencia .cont-img {
-    gap: 40px;
-    padding: 40px;
-  }
-
-  #portafolio .card {
-    margin: 15px auto;
-    max-width: 400px;
-  }
-
-  #hobbies .portfolio-img {
-    width: 100px;
-    height: 100px;
-  }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 91px;
+    padding: 139px 0;
 }
 
-/* SMARTPHONE (iPhone 14 Pro - 430px aprox.) */
-@media (max-width: 576px) {
-  .navbar {
-    top: 10px;
-    width: 94%;
-    padding: 8px 10px;
+#experiencia .cont-info h2{
+font-size: 30px;
+text-align: left;
+
+}
+
+
+#habilidades h2{
+  font-size: 30px;
+  text-align: left;
+}
+
+
+  #habilidades .cont-img img,
+  #experiencia .cont-img img {
+    width: 70px;
   }
 
-  .navbar-brand {
-    font-size: 16px;
+  
+  #footer {
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  #footer a {
+    margin: 5px;
+  }
+
+}
+
+/*SMARTPHONE*/
+@media screen and (min-width:320px) and (max-width:767px){
+
+  body {
+  width:100%;
+  
+  }
+
+  
+  header {
+  height: 100vh;
+  padding-top: 10px;
+  background-position: center;
+    }
+
+  
+ .navbar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18px;
+  width: 92%;
+}
+
+  .navbar-collapse {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
   }
 
   .navbar-nav {
-    gap: 8px;
+    flex-direction: column;
+    gap: 10px;
   }
 
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  /* --- HERO --- */
   .hero {
-    padding: 120px 20px 60px 20px;
+    text-align: center;
+    padding: 60px 20px;
   }
 
   .hero::before {
     width: 100%;
-    opacity: 0.1;
+    height: 50%;
+    bottom: 0;
+    top: auto;
   }
 
   .hero .row {
     flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
   }
 
-  .hero h2, .hero h3 {
+  .hero h2 {
     font-size: 36px;
-    line-height: 1.1;
+  }
+
+  .hero h3 {
+    color: #41207c;
+    font-size: 32px;
+    line-height: 1.4;
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.6;
-    margin: 20px auto;
-    max-width: 90%;
+    margin: 20px 0;
+    left: -40PX;
   }
+
+  .hero .col-md-6:first-child {
+  padding-right: 36px;
+  margin-top: 15px;
+}
 
   .hero .cont-img {
+    margin-top: 25px;
     height: auto;
   }
-
   .hero .cont-img img {
-    width: 280px;
+    width: 97%;
     position: relative;
-    bottom: 0;
+    left: -67px;
+    bottom: 0px;
+    }
+
+  .cont-info a i {
+  color: white;
+  font-size: 30px;
+}
+
+
+  #Portafolio {
+    padding: 40px 20px;
+  }
+
+
+#Portafolio .cont-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 102px;
+}
+
+  #Portafolio .cont-info img {
+    max-width: 350px;
+    margin-bottom: -132px;
+  }
+
+  #Portafolio .cont-img h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #Portafolio .cont-img p {
+    font-size: 23px;
+    line-height: 1.6;
+    
+}
+
+ 
+  .carousel-control-prev,
+  .carousel-control-next {
     left: 0;
+    right: 0;
   }
 
-  .hero .col-md-6:first-child a img {
-    width: 36px;
-    height: 36px;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    padding: 12px;
   }
 
-  #portafolio {
-    padding: 30px 0;
-  }
-
-  #portafolio h2 {
-    font-size: 22px;
-  }
-
-  .btn-portfolio {
-    padding: 6px 16px;
-    font-size: 13px;
+  .card {
+    width: 100%;
+    margin: 10px 0;
   }
 
   #habilidades .cont-img,
   #experiencia .cont-img {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    padding: 20px;
+    gap: 10px;
+    padding: 30px 0;
   }
 
-  #habilidades p,
-  #experiencia p {
-    font-size: 16px;
+  #habilidades .cont-img img,
+  #experiencia .cont-img img {
+    width: 60px;
+  }
+  #habilidades .cont-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px;
+    padding: 53px 0;
+}
+
+  #experiencia .cont-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 32px 0;
+
+  }
+
+  #habilidades h2{
+    text-align: center;
+    font-size: 26px;
+  }
+  #experiencia h2 {
+    text-align: center;
+    font-size: 20px;
   }
 
   #hobbies .portfolio-img {
@@ -625,24 +767,23 @@ padding: 20px;
   }
 
   #hobbies .hobby-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   #footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px 10px;
+    font-size: 0.85rem;
+  }
+
+  #footer .footer-icons {
+    margin-top: 10px;
   }
 
   #footer a {
     display: inline-block;
-    margin: 6px;
+    margin: 5px;
   }
+
+
 }
-
-
-
-
-
-
-
-
